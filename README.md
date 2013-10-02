@@ -1,10 +1,7 @@
-# backrest
+backrest
+========
 
-A Leiningen template for FIXME.
-
-## Usage
-
-FIXME
+Leiningen template for a clojure REST backend and Ember front end with bootstrap
 
 ## License
 

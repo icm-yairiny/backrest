@@ -7,3 +7,6 @@ pom.xml.asc
 *.class
 /.lein-*
 /.nrepl-port
+/lib/
+/targets/
+.lein-deps-sum
