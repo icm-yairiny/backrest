@@ -1,0 +1,17 @@
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<h3>Accounts summary</h3>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		{{#each}}
+			<div class="list-group">
+				{{#link-to 'account' this classNames="list-group-item"}}
+					<h4 class="list-group-item-header">{{name}}</h4>
+					<p class="list-group-item-text">Current balance {{money-view amountBinding="balance"}}</p>
+				{{/link-to}}
+			</div>
+		{{/each}}
+	</div>
+</div>

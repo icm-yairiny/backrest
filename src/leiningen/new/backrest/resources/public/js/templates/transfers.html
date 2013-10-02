@@ -1,0 +1,38 @@
+<div class="row">
+	<div class="col-md-4 col-md-offset-4">
+		<div class="panel panel-default ">
+			<div class="panel-heading">
+				<h2 class="panel-title">Transfer</h2>
+			</div>
+			<div class="panel-body">
+				<form class="form-login form-horizontal">
+					<div class="form-group">
+						<label class="col-md-3 control-label">From</label>
+						<div class="col-md-9">
+							{{view Ember.Select classNames="form-control" contentBinding="accounts"
+								optionValuePath="content.id" optionLabelPath="content.name"
+								valueBinding="selectedAccountId"}}
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-3 control-label">Amount</label>
+						<div class="col-md-9">
+							{{input classNames="form-control" valueBinding="amount"}}
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-3 control-label">To</label>
+						<div class="col-md-9">
+							{{input classNames="form-control" valueBinding="to"}}
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-12">
+							<input class="btn btn-default" type="submit" value="Transfer" {{action execute}}>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

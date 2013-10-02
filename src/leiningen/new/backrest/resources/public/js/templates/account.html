@@ -1,0 +1,26 @@
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<h3>Summary for {{name}}</h3>
+		<p>Your balance is {{money-view amountBinding="balance"}}</p>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<table class="table table-striped">
+			<thead>
+				<th>Date</th>
+				<th>Description</th>
+				<th>Amount</th>
+			</thead>
+			<tbody>
+			{{#each transactions}}
+				<tr>
+					<td>{{datetime-view value=created}}</td>
+					<td>{{description}}</td>
+					<td>{{money-view amount=amount}}</td>
+				</tr>
+			{{/each}}
+			</tbody>
+		</table>
+	</div>
+</div>
